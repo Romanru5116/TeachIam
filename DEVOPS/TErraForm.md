@@ -12,6 +12,8 @@
 Пример: AWS
 YandexCloud
 
+[!][https://github.com/Romanru5116/TeachIam/blob/main/DEVOPS/PIC/Fig0301%20(1).jpg]
+
 1.сформулировать что хочется
 2.сделать описание желаемого состояния 
 3. посмотрть ошибки terrafform apply
