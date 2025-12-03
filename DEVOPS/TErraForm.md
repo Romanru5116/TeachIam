@@ -18,3 +18,4 @@ YandexCloud
 4 исправить и применить terraform aply
 
 КНИГИ: https://www.amazon.com/Terraform-Running-Writing-Infrastructure-Code/dp/1491977086/
+http://onreader.mdl.ru/HashicorpInfrastructureAutomationCertification/content/Ch03.html
