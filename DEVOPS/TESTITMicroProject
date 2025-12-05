@@ -1,5 +1,6 @@
 Цель: ртренировочно развернуть на ноуте кубер и научиться туда деплоить
 ФОрмат: 2 мастера и 3 пода
+[!][scmeme][/Romanru5116/TeachIam/blob/main/DEVOPS/PIC/schemekuber.png]
 развернуть среду исполнения:
 apt update && apt -y upgrade && apt -y install apt-transport-https ca-certificates curl gnupg2 software-properties-common
 sudo apt install docker.io
