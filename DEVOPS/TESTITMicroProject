@@ -19,7 +19,8 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 далее версии проверяем- детально здесь
 kubectl version --client --output=yaml
 
-
+Далее компонент KUBELET -  Kubelet — это агент, который работает на каждом узле в кластере Kubernetes. Он отвечает за то, чтобы контейнеры в Pod'ах были запущены и др
+./kubelet --version
 
 
 МАтериалы
