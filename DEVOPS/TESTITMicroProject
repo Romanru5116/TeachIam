@@ -1,0 +1,12 @@
+Цель: ртренировочно развернуть на ноуте кубер и научиться туда деплоить
+ФОрмат: 2 мастера и 3 пода
+развернуть среду исполнения:
+apt update && apt -y upgrade && apt -y install apt-transport-https ca-certificates curl gnupg2 software-properties-common
+sudo apt install docker.io
+
+После этого нам нужно получить бинарники Kubernetes. 
+самом деле для начального запуска нашего “кластера” нам нужен только kubelet, так как для запуска других серверных компонент мы сможем использовать kubelet. Для взаимодействия с нашим кластером после того как он заработает, мы также будем использовать kubectl
+
+
+МАтериалы
+https://habr.com/ru/companies/otus/articles/513344/
