@@ -22,6 +22,14 @@ kubectl version --client --output=yaml
 Далее компонент KUBELET -  Kubelet — это агент, который работает на каждом узле в кластере Kubernetes. Он отвечает за то, чтобы контейнеры в Pod'ах были запущены и др
 ./kubelet --version
 
+тем в другом терминале/окне tmux/еще где-то, мы создадим манифест пода (
+cat <<EOF > pods/hello.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello)
+
+
 Установка KVM
 sudo apt update
 sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients virtinst virt-manager
