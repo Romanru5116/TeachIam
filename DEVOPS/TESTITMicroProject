@@ -29,12 +29,18 @@ kind: Pod
 metadata:
   name: hello)
 
+после презагрузки отказался запускаться
+ругается на устаревший параметр
+kubelet --pod-manifest-path=pods
 
-Установка KVM
-sudo apt update
-sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients virtinst virt-manager
+правим конфиг
+ищем здесь:
+Конфигурация Kubelet: Это основной источник.
+Файл: Чаще всего он находится в /var/lib/kubelet/config.yaml (или похожий путь, если установлен кастомно).
+что там:://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/
 
-Устанвока minikube
+192.168.122.1
+192.168.122.1
 
 МАтериалы
 https://habr.com/ru/companies/otus/articles/513344/
