@@ -1,4 +1,4 @@
-Цель: ртренировочно развернуть на ноуте кубер и научиться туда деплоить
+FЦель: ртренировочно развернуть на ноуте кубер и научиться туда деплоить
 ФОрмат: 2 мастера и 3 пода
 [!][scmeme][/Romanru5116/TeachIam/blob/main/DEVOPS/PIC/schemekuber.png]
 [!][https://kubernetes.io/docs/concepts/overview/components/]
@@ -22,6 +22,11 @@ kubectl version --client --output=yaml
 Далее компонент KUBELET -  Kubelet — это агент, который работает на каждом узле в кластере Kubernetes. Он отвечает за то, чтобы контейнеры в Pod'ах были запущены и др
 ./kubelet --version
 
+Установка KVM
+sudo apt update
+sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients virtinst virt-manager
+
+Устанвока minikube
 
 МАтериалы
 https://habr.com/ru/companies/otus/articles/513344/
