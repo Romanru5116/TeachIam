@@ -22,3 +22,4 @@ cloud-controller-manager: Для интеграции с облачными пр
 Поды: статические (без API)
 Static Pods are managed directly by the kubelet daemon on a specific node, without the API server observing them. Unlike Pods that are managed by the control plane (for example, a Deployment); instead, the kubelet watches each static Pod (and restarts it if it fail
 Настройка в конфигеanifests are standard Pod definitions in JSON or YAML format in a specific directory. Use the staticPodPath: <the directory> field in the kubelet configuration file, which periodically scans the directory and creates/deletes static Pods as YAML/JSON files appear/disappear there. Note that the kubelet will ignore files starting with dots when scanning the specified directory.
+ВАЖНО: есть конфиг kubelet обычно в https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/#create-the-config-file
