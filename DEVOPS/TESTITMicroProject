@@ -10,7 +10,8 @@ sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils vir
 sudo systemctl enable --now libvirtd
 sudo usermod -aG libvirt $USER
 # Перелогиньтесь, чтобы изменения вступили в силу.
-
+работа с qemu
+пример запуска qemu-system-x86_64 -cdrom ubuntu-24.04.2-desktop-amd64.iso -hda disk.img  
 
 [!][scmeme][/Romanru5116/TeachIam/blob/main/DEVOPS/PIC/schemekuber.png]
 [!][https://kubernetes.io/docs/concepts/overview/components/]
