@@ -5,6 +5,8 @@ FЦель: ртренировочно развернуть на ноуте ку�
 Чтобы установить QEMU/KVM, нужно использовать менеджер пакетов вашей системы (например, apt для Debian/Ubuntu или yum/dnf для Red Hat/Fedora), 
 установив пакеты qemu, kvm, и libvirt (часто с virt-manager для удобства), 
 а затем проверить, включено ли аппаратное ускорение KVM, командой kvm-ok или в мониторе QEMU, после чего можно запускать виртуальные машины, используя qemu-system-* или virt-manager. 
+https://habr.com/ru/sandbox/244526/
+
 
 sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager
 sudo systemctl enable --now libvirtd
