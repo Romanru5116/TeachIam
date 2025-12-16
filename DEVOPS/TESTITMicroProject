@@ -1,5 +1,10 @@
 FЦель: ртренировочно развернуть на ноуте кубер и научиться туда деплоить
-ФОрмат: 2 мастера и 3 пода
+Формат: 1 мастер и 2 ноды
+надо развернуть qemu-kvm
+Чтобы установить QEMU/KVM, нужно использовать менеджер пакетов вашей системы (например, apt для Debian/Ubuntu или yum/dnf для Red Hat/Fedora), установив пакеты qemu, kvm, и libvirt (часто с virt-manager для удобства), а затем проверить, включено ли аппаратное ускорение KVM, командой kvm-ok или в мониторе QEMU, после чего можно запускать виртуальные машины, используя qemu-system-* или virt-manager. 
+
+
+
 [!][scmeme][/Romanru5116/TeachIam/blob/main/DEVOPS/PIC/schemekuber.png]
 [!][https://kubernetes.io/docs/concepts/overview/components/]
 развернуть среду исполнения:
