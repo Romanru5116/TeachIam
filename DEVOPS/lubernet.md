@@ -17,4 +17,12 @@ kubectl top node — выводит информацию о потреблени
 
 Мониторинг https://habr.com/ru/companies/slurm/articles/516748/
 
+Ваш ПК
+ └── Minikube → Внутри него работает Kubernetes-кластер
+       ├── Нода (виртуальная)
+       ├── kube-apiserver
+       ├── scheduler
+       ├── etcd
+       └── Поды, сервисы, деплойменты
+
 создать новый профиль (новый кластер) minikube start -p <имя_кластера>
