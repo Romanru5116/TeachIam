@@ -16,3 +16,5 @@ kubectl top node — выводит информацию о потреблени
 шпаргалкка https://kubernetes.io/ru/docs/reference/kubectl/cheatsheet/
 
 Мониторинг https://habr.com/ru/companies/slurm/articles/516748/
+
+создать новый профиль (новый кластер) minikube start -p <имя_кластера>
