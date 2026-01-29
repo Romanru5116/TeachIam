@@ -14,3 +14,5 @@ kubectl describe node <имя-ноды> — отображает подробн�
 kubectl top node — выводит информацию о потреблении ресурсов (CPU/RAM). 
 
 шпаргалкка https://kubernetes.io/ru/docs/reference/kubectl/cheatsheet/
+
+Мониторинг https://habr.com/ru/companies/slurm/articles/516748/
