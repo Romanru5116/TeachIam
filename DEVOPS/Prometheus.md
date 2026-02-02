@@ -44,5 +44,10 @@ scrape_configs:
   - job_name: 'prometheus'
     static_configs:
       - targets: ['localhost:9090']
+   
+. Run Prometheus
+From within the prometheus-config directory, start the container in detached mode (in the background): 
+bash
+docker-compose up -d
 
 литература
