@@ -18,7 +18,15 @@ mkdir prometheus-config
 cd prometheus-config
 nano prometheus.yml
 
+Create a Docker Compose file 
+In the same prometheus-config directory, create a file named docker-compose.yml. 
+bash
+nano docker-compose.yml
+Add the following content:
+yaml
+version: '3.8'
 
+services:
 
  Конфиги обычно хранятся:
  Основные места хранения:
