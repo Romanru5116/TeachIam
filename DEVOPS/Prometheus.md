@@ -18,6 +18,15 @@ mkdir prometheus-config
 cd prometheus-config
 nano prometheus.yml
 
+
+
+ Конфиги обычно хранятся:
+ Основные места хранения:
+Конфигурация (prometheus.yml): /etc/prometheus/prometheus.yml.
+Данные (TSDB): /var/lib/prometheus/ или /data. 
+Для проверки точного пути, используемого запущенным экземпляром, можно выполнить команду:
+ps aux | grep prometheus | grep config.file. 
+
 Add the following content to prometheus.yml:
 
 yaml
