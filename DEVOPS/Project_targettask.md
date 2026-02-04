@@ -8,7 +8,13 @@ kube развернут в дефолтном конфиге
 при сборке prometheus сыпет ошибками  docker compose
 
 ставим docker compose
-офф инуструкция не подходит  https://docs.docker.com/compose/install/
+офф инуструкция отсюда
+Docker Desktop (Recommended)
+The easiest and recommended way to get Docker Compose is to install Docker Desktop.
+
+Docker Desktop includes Docker Compose along with Docker Engine and Docker CLI which are Compose prerequisites.
+
+Docker Desktop is available for:
 
 Документация
 мониторинг https://habr.com/ru/companies/slurm/articles/516748/
