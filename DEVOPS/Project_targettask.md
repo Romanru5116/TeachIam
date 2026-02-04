@@ -15,6 +15,7 @@ The easiest and recommended way to get Docker Compose is to install Docker Deskt
 Docker Desktop includes Docker Compose along with Docker Engine and Docker CLI which are Compose prerequisites.
 
 Docker Desktop is available for:
+Docker Compose is by installing Docker Desktop. It includes Docker Engine, Docker CLI, and Docker Compose as part of the package for Windows, macOS, and Linux. The modern command is docker compose (with a space), not the legacy docker-compose (with a hyphen). 
 
 Документация
 мониторинг https://habr.com/ru/companies/slurm/articles/516748/
