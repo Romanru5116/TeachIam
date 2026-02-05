@@ -22,6 +22,23 @@ https://www.google.com/search?q=docker+compose+insstall&oq=docker+compose+inssta
 0502
 docker  compose развкрнут
 структур под проект создать
+Развернуть prometheus^
+ep-by-Step Guide to Monitoring Prometheus with Docker
+Step 1: Creating the Project Structure
+Start by setting up a well-organized directory structure:
+
+# Create project directory
+mkdir prometheus-monitoring
+cd prometheus-monitoring
+
+# Create subdirectories for configurations
+mkdir -p prometheus/rules alertmanager grafana/provisioning/{datasources,dashboards}
+This directory structure helps keep things clean and manageable as your monitoring setup grows.
+
+prometheus/rules/ is where you’ll store custom alerting and recording rules.
+alertmanager/ will hold the Alertmanager config file, including routing and notification settings.
+grafana/provisioning/ is split into datasources/ and dashboards/ to support automated Grafana setup—so your dashboards and data sources load automatically on startup.
+Organizing your files this way makes it easier to version-control, update configs independently, and troubleshoot issues faster.
 
 
 Документация
