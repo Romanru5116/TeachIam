@@ -84,6 +84,8 @@ cAdvisor: http://localhost:8080
 Alertmanager: http://localhost:9093
 
 
+[картинка GRAFAN ЗАПУСТИЛАСЬ!
+
 Документация
 как развернуть https://last9.io/blog/prometheus-with-docker-compose/
 
