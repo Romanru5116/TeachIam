@@ -44,6 +44,10 @@ Organizing your files this way makes it easier to version-control, update config
 здесь должна быть картинка
 
 Step 2: Defining the Docker Compose Configuration
+-- пока не понимаю как- куча парметров
+
+Step 3: Configuring Prometheus
+Create a prometheus.yml file in the prometheus directory:
 
 
 Документация
