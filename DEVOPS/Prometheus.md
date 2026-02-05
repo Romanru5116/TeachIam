@@ -50,4 +50,11 @@ From within the prometheus-config directory, start the container in detached mod
 bash
 docker-compose up -d
 
+
+he provided command line arguments are used to configure and run the Prometheus monitoring system. They define various system parameters and file locations: 
+--config.file=/etc/prometheus/prometheus.yml: Specifies the path to the main configuration file that Prometheus uses to define scraping jobs, rules, and other settings.
+--storage.tsdb.path=/prometheus: Sets the base directory where Prometheus stores its time-series database (TSDB) data on disk.
+--web.console.libraries=/usr/share/prometheus/console_libraries and --web.console.templates=/usr/share/prometheus/consoles: These flags specify the locations for console libraries and templates, which are used for the experimental and historical web console functionality within Prometheus.
+--web.enable-lifecycle: This flag enables the HTTP lifecycle endpoints (like /-/reload and /-/quit), allowing the configuration to be reloaded (by sending a SIGHUP or a POST request to the /reload endpoint) or the server to be shut down gracefully at runtime via HTTP requests, without needing to restart the process manually. 
+
 литература
