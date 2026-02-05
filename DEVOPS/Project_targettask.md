@@ -1,6 +1,7 @@
-на локальной машине равзернуть кластер
-настроить мониторинг
-задеплоить готовое ПО
+Решаем задачи:
+1 на локальной машине равзернуть кластер kubernetes дефолтный
+2 настроить мониторингprometheus 
+3 развернуть в кластере nginx
 
 на 02.02:
 kube развернут в дефолтном конфиге
@@ -40,9 +41,13 @@ alertmanager/ will hold the Alertmanager config file, including routing and noti
 grafana/provisioning/ is split into datasources/ and dashboards/ to support automated Grafana setup—so your dashboards and data sources load automatically on startup.
 Organizing your files this way makes it easier to version-control, update configs independently, and troubleshoot issues faster.
 
+здесь должна быть картинка
+
 Step 2: Defining the Docker Compose Configuration
 
 
 Документация
-мониторинг https://habr.com/ru/companies/slurm/articles/516748/
+как развернуть https://last9.io/blog/prometheus-with-docker-compose/
+
+собственно мониторинг https://habr.com/ru/companies/slurm/articles/516748/
 
