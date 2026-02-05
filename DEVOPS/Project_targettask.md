@@ -46,6 +46,15 @@ Organizing your files this way makes it easier to version-control, update config
 Step 2: Defining the Docker Compose Configuration
 -- пока не понимаю как- куча парметров
 
+краткое описанеи компонентов
+This Docker Compose setup wires together all the key components for a solid monitoring stack:
+
+Prometheus handles time-series data collection and storage. It pulls metrics from exporters and other endpoints based on your configuration. The --web.enable-lifecycle flag lets you trigger config reloads without restarting the container.
+Node Exporter collects low-level system metrics from the host—like CPU usage, memory, and disk stats. We're mounting /proc and /sys read-only so Prometheus can scrape accurate host metrics without affecting the system.
+cAdvisor focuses on container-level metrics, offering insights into resource usage per container—handy when you’re running multiple services on the same host.
+Grafana sits on top of Prometheus and provides a user-friendly interface to visualize your data. The provisioning folders (datasources and dashboards) ensure everything is set up automatically on first run.
+Alertmanager receives alerts from Prometheus and routes them to the right place—Slack, PagerDuty, email, etc. Mounting the config from your local folder keeps it easy to tweak as your alerting needs evolve.
+
 Step 3: Configuring Prometheus
 Create a prometheus.yml file in the prometheus directory:
 
