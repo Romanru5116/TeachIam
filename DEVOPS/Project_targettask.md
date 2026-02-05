@@ -20,7 +20,8 @@ Docker Compose is by installing Docker Desktop. It includes Docker Engine, Docke
 https://www.google.com/search?q=docker+compose+insstall&oq=docker+compose+insstall&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDY1MjlqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8
 
 0502
-продолжаем разворачивание
+продолжаем разворачивание docker compose Recommended Method: Docker Desktop
+
 
 Документация
 мониторинг https://habr.com/ru/companies/slurm/articles/516748/
