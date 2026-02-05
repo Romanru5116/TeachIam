@@ -27,7 +27,12 @@ yaml
 version: '3.8'
 
 services:
-
+КОНФИГИ:
+Файл конфигурации Prometheus (обычно с именем prometheus.yml) чаще всего находится в директории /etc/prometheus/ на Linux-системах. 
+При установке из архива файл лежит в корне распакованной папки.
+Если используется Docker, файл монтируется в контейнер, например, по пути /etc/prometheus/prometheus.yml. 
+Основные пути и особенности:
+Стандартная установка (Linux): /etc/prometheus/prometheus.yml.
  Конфиги обычно хранятся:
  Основные места хранения:
 Конфигурация (prometheus.yml): /etc/prometheus/prometheus.yml.
