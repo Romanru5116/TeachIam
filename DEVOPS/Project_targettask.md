@@ -55,6 +55,10 @@ cAdvisor focuses on container-level metrics, offering insights into resource usa
 Grafana sits on top of Prometheus and provides a user-friendly interface to visualize your data. The provisioning folders (datasources and dashboards) ensure everything is set up automatically on first run.
 Alertmanager receives alerts from Prometheus and routes them to the right place—Slack, PagerDuty, email, etc. Mounting the config from your local folder keeps it easy to tweak as your alerting needs evolve.
 
+что к чему
+volumes: Постоянное хранение данных, которые сохраняются после удаления контейнера. 
+networks в docker-compose.yml — это раздел конфигурации, определяющий виртуальные сети для взаимодействия между контейнерами. Он позволяет объединять сервисы, изолировать их, настраивать DNS-имена и управлять сетевым трафиком внутри проекта. По умолчанию Compose создает одну сеть, подключая к ней все сервисы. 
+
 Step 3: Configuring Prometheus
 Create a prometheus.yml file in the prometheus directory:
 
