@@ -62,6 +62,13 @@ networks в docker-compose.yml — это раздел конфигурации,
 Step 3: Configuring Prometheus
 Create a prometheus.yml file in the prometheus directory:
 
+Step 3: Configuring Prometheus
+Create a prometheus.yml file in the prometheus directory:
+
+steStep 4: Setting Up Alert Rules
+Create an alert rules file at prometheus/rules/node_alerts.yml:p4:
+
+
 
 Документация
 как развернуть https://last9.io/blog/prometheus-with-docker-compose/
