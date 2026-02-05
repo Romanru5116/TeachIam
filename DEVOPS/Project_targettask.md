@@ -59,8 +59,6 @@ Alertmanager receives alerts from Prometheus and routes them to the right place�
 volumes: Постоянное хранение данных, которые сохраняются после удаления контейнера. 
 networks в docker-compose.yml — это раздел конфигурации, определяющий виртуальные сети для взаимодействия между контейнерами. Он позволяет объединять сервисы, изолировать их, настраивать DNS-имена и управлять сетевым трафиком внутри проекта. По умолчанию Compose создает одну сеть, подключая к ней все сервисы. 
 
-Step 3: Configuring Prometheus
-Create a prometheus.yml file in the prometheus directory:
 
 Step 3: Configuring Prometheus
 Create a prometheus.yml file in the prometheus directory:
@@ -68,7 +66,14 @@ Create a prometheus.yml file in the prometheus directory:
 steStep 4: Setting Up Alert Rules
 Create an alert rules file at prometheus/rules/node_alerts.yml:p4:
 
+Step 5: Configuring Alertmanager
+Create a basic Alertmanager configuration in alertmanager/config.yml:
 
+Step 6: Setting Up Grafana Dashboards
+Configure Grafana to connect to Prometheus automatically by creating grafana/provisioning/datasources/datasource.yml:
+
+Step 7: Performance Optimization for Production
+For production deployments, optimize Prometheus for better performance:
 
 Документация
 как развернуть https://last9.io/blog/prometheus-with-docker-compose/
