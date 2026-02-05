@@ -40,6 +40,8 @@ alertmanager/ will hold the Alertmanager config file, including routing and noti
 grafana/provisioning/ is split into datasources/ and dashboards/ to support automated Grafana setup—so your dashboards and data sources load automatically on startup.
 Organizing your files this way makes it easier to version-control, update configs independently, and troubleshoot issues faster.
 
+Step 2: Defining the Docker Compose Configuration
+
 
 Документация
 мониторинг https://habr.com/ru/companies/slurm/articles/516748/
