@@ -83,8 +83,13 @@ Grafana: http://localhost:3000 (login with admin/admin)
 cAdvisor: http://localhost:8080
 Alertmanager: http://localhost:9093
 
+Результат:
 
 [картинка GRAFAN ЗАПУСТИЛАСЬ!
+
+Step 9: Monitoring Docker Containers
+
+
 
 Документация
 как развернуть https://last9.io/blog/prometheus-with-docker-compose/
