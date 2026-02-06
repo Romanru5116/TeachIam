@@ -75,6 +75,7 @@ Configure Grafana to connect to Prometheus automatically by creating grafana/pro
 Step 7: Performance Optimization for Production
 For production deployments, optimize Prometheus for better performance:
 
+
 ПРОВЕРКА ЧТО РАБОТАЕТ
 ccess the monitoring interfaces:
 
@@ -82,7 +83,8 @@ Prometheus: http://localhost:9090
 Grafana: http://localhost:3000 (login with admin/admin)
 cAdvisor: http://localhost:8080
 Alertmanager: http://localhost:9093
-
+надо пользоватля прописать?
+Пользователь, под которым запущен Prometheus (обычно nobody или prometheus), не имеет прав на чтение файла или папки.
 Результат:
 
 [картинка GRAFAN ЗАПУСТИЛАСЬ!
