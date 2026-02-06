@@ -87,9 +87,16 @@ Alertmanager: http://localhost:9093
 
 [картинка GRAFAN ЗАПУСТИЛАСЬ!
 
+
 Step 9: Monitoring Docker Containers
 
-
+ПРИМЕЧАНИЯ:
+версии Docker Compose (v1) с новыми версиями Docker Engine (24+), обычно проявляясь как KeyError: 'ContainerConfig'. Решения включают обновление до Docker Compose v2, использование команды docker compose (без дефиса) или удаление строки version: '...' из docker-compose.yml. 
+Основные причины и способы решения:
+Конфликт версий: Старая версия docker-compose (Python-версия) несовместима с новым API Docker.
+Решение 1 (Рекомендуемое): Используйте обновленный плагин Docker Compose (v2), заменив в командах дефис на пробел: docker compose up -d вместо docker-compose up -d.
+Решение 2: Удалите строку version: 'x.x' (например, version: '3') в начале вашего файла docker-compose.yml.
+Решение 3: Обновите Docker Compose до последней версии. 
 
 Документация
 как развернуть https://last9.io/blog/prometheus-with-docker-compose/
