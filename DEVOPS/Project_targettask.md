@@ -105,7 +105,15 @@ Alertmanager: http://localhost:9093
 Права доступа: Пользователь является владельцем файлов конфигурации (обычно в /etc/prometheus/) и директорий с данными (/var/lib/prometheus/).
 Безопасность: Рекомендуется создавать пользователя без возможности интерактивного входа, чтобы предотвратить компрометацию сервера через службу мониторинга. 
 
-
+на 18.02 ошибки при сборке контейнера вида
+ERROR: for node-exporter  'ContainerConfig'
+Traceback (most recent call last):
+  File "/usr/bin/docker-compose", line 33, in <module>
+    sys.exit(load_entry_point('docker-compose==1.29.2', 'console_scripts', 'docker-compose')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 81, in main
+    command_func()
+Решение: проверить версию контейнера Check if V2 is installed:
 
 Step 9: Monitoring Docker Containers
 
