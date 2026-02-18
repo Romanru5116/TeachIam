@@ -113,7 +113,17 @@ Traceback (most recent call last):
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 81, in main
     command_func()
-Решение: проверить версию контейнера Check if V2 is installed:
+Решение: зпускать другу версию compose
+Основная разница между docker-compose (через дефис) и docker compose (без дефиса) заключается в версии инструмента. docker-compose — это старая версия (v1), написанная на Python, а docker compose — это новая версия (v2), интегрированная в Docker CLI, написанная на Go. Рекомендуется использовать современный вариант docker compose.
+Ключевые различия:
+Версия и архитектура: docker-compose (v1) — отдельный бинарный файл. docker compose (v2) — встроенный плагин docker CLI.
+Установка: V1 требовала отдельной установки, V2 входит в состав Docker Desktop и актуальных версий Docker Engine.
+Синтаксис: V2 (docker compose) быстрее, поддерживает новые функции и игнорирует поле version в docker-compose.yml, полагаясь на актуальные стандарты.
+Команды: Большинство команд (up, down, logs) работают одинаково, но docker compose является более предпочтительным стандартом. 
+1cloud
+1cloud
+ +4
+Если у вас современная версия Docker, используйте docker compose.
 
 Step 9: Monitoring Docker Containers
 
