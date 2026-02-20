@@ -3,6 +3,58 @@
 2 настроить мониторингprometheus 
 3 развернуть в кластере nginx
 
+**СТАТУС ПРОЕКТА**
+на 2002
+прометеус (сервер, экспортер) и графана  развернуты  и работают, в гарафане настроен первыф дашборд загрузки CPU
+смотреть:
+grafana:http://localhost:3000/?orgId=1&from=now-6h&to=now&timezone=browser
+prometheus server:
+http://localhost:9090/query
+node_exporter
+http://localhost:9100/metrics
+
+на 19.02 подклчен node exporter
+статус можно смотреть в http://localhost:9090/targets
+прикручиваем grafana
+
+на 18.02 ошибки при сборке контейнера вида
+ERROR: for node-exporter  'ContainerConfig'
+Traceback (most recent call last):
+  File "/usr/bin/docker-compose", line 33, in <module>
+    sys.exit(load_entry_point('docker-compose==1.29.2', 'console_scripts', 'docker-compose')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 81, in main
+    command_func()
+Решение: зпускать другу версию compose
+Основная разница между docker-compose (через дефис) и docker compose (без дефиса) заключается в версии инструмента. docker-compose — это старая версия (v1), написанная на Python, а docker compose — это новая версия (v2), интегрированная в Docker CLI, написанная на Go. Рекомендуется использовать современный вариант docker compose.
+Ключевые различия:
+Версия и архитектура: docker-compose (v1) — отдельный бинарный файл. docker compose (v2) — встроенный плагин docker CLI.
+Установка: V1 требовала отдельной установки, V2 входит в состав Docker Desktop и актуальных версий Docker Engine.
+Синтаксис: V2 (docker compose) быстрее, поддерживает новые функции и игнорирует поле version в docker-compose.yml, полагаясь на актуальные стандарты.
+Команды: Большинство команд (up, down, logs) работают одинаково, но docker compose является более предпочтительным стандартом. 
+1cloud
+1cloud
+ +4
+Если у вас современная версия Docker, используйте docker compose.
+
+Gjlcrcprb
+Step 9: Monitoring Docker Containers
+
+ПРИМЕЧАНИЯ:
+версии Docker Compose (v1) с новыми версиями Docker Engine (24+), обычно проявляясь как KeyError: 'ContainerConfig'. Решения включают обновление до Docker Compose v2, использование команды docker compose (без дефиса) или удаление строки version: '...' из docker-compose.yml. 
+Основные причины и способы решения:
+Конфликт версий: Старая версия docker-compose (Python-версия) несовместима с новым API Docker.
+Решение 1 (Рекомендуемое): Используйте обновленный плагин Docker Compose (v2), заменив в командах дефис на пробел: docker compose up -d вместо docker-compose up -d.
+Решение 2: Удалите строку version: 'x.x' (например, version: '3') в начале вашего файла docker-compose.yml.
+Решение 3: Обновите Docker Compose до последней версии. 
+
+на 1902
+прометус развернут, добавлена ручная метрика
+
+на 0502
+docker  compose развернут
+структур под проект создать
+Развернуть prometheus^
 на 02.02:
 kube развернут в дефолтном конфиге
 прометеус развернут
@@ -20,11 +72,11 @@ Docker Compose is by installing Docker Desktop. It includes Docker Engine, Docke
 В итоге нашел инструкцию как постаивть  докер плагин
 https://www.google.com/search?q=docker+compose+insstall&oq=docker+compose+insstall&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDY1MjlqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8
 
-0502
-docker  compose развкрнут
-структур под проект создать
-Развернуть prometheus^
-ep-by-Step Guide to Monitoring Prometheus with Docker
+
+
+
+Описание что к чему:
+Step-by-Step Guide to Monitoring Prometheus with Docker
 Step 1: Creating the Project Structure
 Start by setting up a well-organized directory structure:
 
@@ -105,39 +157,7 @@ Alertmanager: http://localhost:9093
 Права доступа: Пользователь является владельцем файлов конфигурации (обычно в /etc/prometheus/) и директорий с данными (/var/lib/prometheus/).
 Безопасность: Рекомендуется создавать пользователя без возможности интерактивного входа, чтобы предотвратить компрометацию сервера через службу мониторинга. 
 
-на 20.02 подклчен node exporter
-статус можно смотреть в http://localhost:9090/targets
-прикручиваем grafana
 
-на 18.02 ошибки при сборке контейнера вида
-ERROR: for node-exporter  'ContainerConfig'
-Traceback (most recent call last):
-  File "/usr/bin/docker-compose", line 33, in <module>
-    sys.exit(load_entry_point('docker-compose==1.29.2', 'console_scripts', 'docker-compose')())
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 81, in main
-    command_func()
-Решение: зпускать другу версию compose
-Основная разница между docker-compose (через дефис) и docker compose (без дефиса) заключается в версии инструмента. docker-compose — это старая версия (v1), написанная на Python, а docker compose — это новая версия (v2), интегрированная в Docker CLI, написанная на Go. Рекомендуется использовать современный вариант docker compose.
-Ключевые различия:
-Версия и архитектура: docker-compose (v1) — отдельный бинарный файл. docker compose (v2) — встроенный плагин docker CLI.
-Установка: V1 требовала отдельной установки, V2 входит в состав Docker Desktop и актуальных версий Docker Engine.
-Синтаксис: V2 (docker compose) быстрее, поддерживает новые функции и игнорирует поле version в docker-compose.yml, полагаясь на актуальные стандарты.
-Команды: Большинство команд (up, down, logs) работают одинаково, но docker compose является более предпочтительным стандартом. 
-1cloud
-1cloud
- +4
-Если у вас современная версия Docker, используйте docker compose.
-
-Step 9: Monitoring Docker Containers
-
-ПРИМЕЧАНИЯ:
-версии Docker Compose (v1) с новыми версиями Docker Engine (24+), обычно проявляясь как KeyError: 'ContainerConfig'. Решения включают обновление до Docker Compose v2, использование команды docker compose (без дефиса) или удаление строки version: '...' из docker-compose.yml. 
-Основные причины и способы решения:
-Конфликт версий: Старая версия docker-compose (Python-версия) несовместима с новым API Docker.
-Решение 1 (Рекомендуемое): Используйте обновленный плагин Docker Compose (v2), заменив в командах дефис на пробел: docker compose up -d вместо docker-compose up -d.
-Решение 2: Удалите строку version: 'x.x' (например, version: '3') в начале вашего файла docker-compose.yml.
-Решение 3: Обновите Docker Compose до последней версии. 
 
 Документация
 как развернуть https://last9.io/blog/prometheus-with-docker-compose/
