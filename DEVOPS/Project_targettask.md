@@ -4,7 +4,11 @@
 3 развернуть в кластере nginx
 
 **СТАТУС ПРОЕКТА**
-на 2002
+на 24.02 начал обвешивать инфраметрики
+вот график потребления памяти на ноуте(он же нода в терминологии node exporter) http://localhost:3000/d/admn6cb/new-dashboard?orgId=1&from=now-6h&to=now&timezone=browser&editPanel=2
+Интересно что запуск minikube никак не повлиял на график 
+
+на 20/02
 прометеус (сервер, экспортер) и графана  развернуты  и работают, в гарафане настроен первыф дашборд загрузки CPU
 смотреть:
 grafana:http://localhost:3000/?orgId=1&from=now-6h&to=now&timezone=browser
