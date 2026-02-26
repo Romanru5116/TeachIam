@@ -5,7 +5,7 @@
 
 **СТАТУС ПРОЕКТА**
 yf 27/02 кластер заупскается с одной управляющей нодой
-[скринконфига](https://github.com/Romanru5116/TeachIam/blob/f25cfdcac35aa5b590b08dfc9154a71f14cbf05b/DEVOPS/PIC/minikube%20config%202026-02-27%2001-29-08.png)
+![скринконфига](https://github.com/Romanru5116/TeachIam/blob/f25cfdcac35aa5b590b08dfc9154a71f14cbf05b/DEVOPS/PIC/minikube%20config%202026-02-27%2001-29-08.png)
 на 26/02
 обнаруужил статью https://habr.com/ru/articles/969404/
 добавилв графану метрику поребления диска (картинка )
