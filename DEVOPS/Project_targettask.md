@@ -24,6 +24,7 @@ http://localhost:9100/metrics
 
 на 19.02 подклчен node exporter
 статус можно смотреть в http://localhost:9090/targets
+![источники](https://github.com/Romanru5116/TeachIam/blob/31a10ce6d6bbd70fa1103374efe4cf211d8cc19f/DEVOPS/PIC/node_exporter_2026-02-27%2001-19-23.png)
 прикручиваем grafana
 
 на 18.02 ошибки при сборке контейнера вида
