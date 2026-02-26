@@ -8,7 +8,7 @@
 на 26/02
 обнаруужил статью https://habr.com/ru/articles/969404/
 добавилв графану метрику поребления диска (картинка )
-![инфра графана ][DEVOPS/PIC/Screenshot grafana 2026-02-27 01-09-11.png]
+![инфра графана ][https://github.com/Romanru5116/TeachIam/blob/7394d2c5a2c4eab930d68e4a467a126f1373d4ed/DEVOPS/PIC/Screenshot%20grafana%202026-02-27%2001-09-11.png]
 Screenshot grafana 2026-02-27 01-09-11.png
 на 24.02 начал обвешивать инфраметрики
 вот график потребления памяти на ноуте(он же нода в терминологии node exporter) http://localhost:3000/d/admn6cb/new-dashboard?orgId=1&from=now-6h&to=now&timezone=browser&editPanel=2
