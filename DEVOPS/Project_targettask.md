@@ -8,7 +8,7 @@
 на 27/02 по подзадаче1 кластер заупскается с одной управляющей нодой
 ![скринконфига](https://github.com/Romanru5116/TeachIam/blob/f25cfdcac35aa5b590b08dfc9154a71f14cbf05b/DEVOPS/PIC/minikube%20config%202026-02-27%2001-29-08.png)
 и несколькими подами
-![детальный скрин][https://github.com/Romanru5116/TeachIam/blob/047fea0dafbc4dfd7732eb76ed7a89cdce34a566/DEVOPS/PIC/Screenshot%20miniconfig%202026-02-27%2002-17-17.png]
+![детальный скрин](https://github.com/Romanru5116/TeachIam/blob/047fea0dafbc4dfd7732eb76ed7a89cdce34a566/DEVOPS/PIC/Screenshot%20miniconfig%202026-02-27%2002-17-17.png)
 на 26/02 обнаруужил статью https://habr.com/ru/articles/969404/
 По позадаче2 добавил в графану метрику поребления диска (картинка ниже)
 ![инфра графана ](https://github.com/Romanru5116/TeachIam/blob/7394d2c5a2c4eab930d68e4a467a126f1373d4ed/DEVOPS/PIC/Screenshot%20grafana%202026-02-27%2001-09-11.png)
