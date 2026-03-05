@@ -3,6 +3,15 @@
 результаты решения размещены в подпапке Easypython
 прогресс 05.03
 63% материалов пройдено
+подключен репозиторий python для уставановки pycharm
+deb
+URIs: https://ppa.launchpadcontent.net/deadsnakes/ppa/ubuntu/
+Suites: noble
+Components: main
+'
+Description:
+This PPA contains more recent Python versions packaged for Ubuntu.
+
 прогресс 03.03
 порядка 62% материалов пройдено
 прогресс 27.02
