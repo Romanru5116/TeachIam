@@ -9,7 +9,7 @@
  документация отсюда https://purpleschool.ru/knowledge-base/kubernetes/work-with-components/kubernetes-ingress-nginx
 картинка проварка что установился балансировщик- на ней не выделен внешний IP! cэтим разбираться надо
 ![ingress_kuber_check](https://github.com/Romanru5116/TeachIam/blob/9d47dbc9723456828db1536f9a429237d49203f2/DEVOPS/PIC/Screenshot%20CHECKIngress%202026-03-06%2001-37-33.png)
- 
+попытка развернуть fiddler https://www.mono-project.com/download/stable/
 картинки
 ![helm](https://github.com/Romanru5116/TeachIam/blob/5e4682646005cab7a09304e1a639e73a3e8bba09/DEVOPS/PIC/Screenshot%20HELM%2BREPO%20install%202026-03-06%2001-21-24.png)
 ![ingress-install](https://github.com/Romanru5116/TeachIam/blob/5e4682646005cab7a09304e1a639e73a3e8bba09/DEVOPS/PIC/Screenshot%20install%20In%20gressNginx%202026-03-06%2001-16-49.png)
