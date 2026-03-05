@@ -5,6 +5,11 @@
 3 развернуть в кластере nginx
 
 **СТАТУС ПРОЕКТА**
+на 0603 начал работы по развартыванию пода с nginx- много ненпонятного но интtресно
+ документация отсюда https://purpleschool.ru/knowledge-base/kubernetes/work-with-components/kubernetes-ingress-nginx
+картинки
+![helm](https://github.com/Romanru5116/TeachIam/blob/5e4682646005cab7a09304e1a639e73a3e8bba09/DEVOPS/PIC/Screenshot%20HELM%2BREPO%20install%202026-03-06%2001-21-24.png)
+![ingress](https://github.com/Romanru5116/TeachIam/blob/5e4682646005cab7a09304e1a639e73a3e8bba09/DEVOPS/PIC/Screenshot%20install%20In%20gressNginx%202026-03-06%2001-16-49.png)
 на 27/02 по подзадаче1 кластер заупскается с одной управляющей нодой
 ![скринконфига](https://github.com/Romanru5116/TeachIam/blob/f25cfdcac35aa5b590b08dfc9154a71f14cbf05b/DEVOPS/PIC/minikube%20config%202026-02-27%2001-29-08.png)
 с дефолтными профилями
